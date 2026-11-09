@@ -300,3 +300,53 @@ img {
 .habilidades li:nth-child(odd) {
     border-color: var(--cor-destaque);
 }
+
+/* ---------- Contato ---------- */
+.contatos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--espaco-2);
+    margin: var(--espaco-3) 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contatos li {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 240px;
+    padding: var(--espaco-2) var(--espaco-3);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    background-color: var(--cor-superficie);
+}
+
+.contatos strong {
+    color: var(--cor-texto-suave);
+    font-size: 0.85rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.contatos a {
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+.contatos a:hover {
+    color: var(--cor-destaque-escura);
+    text-decoration-thickness: 2px;
+}
+
+/* ---------- Rodapé ---------- */
+.rodape {
+    padding: var(--espaco-3) 0;
+    background-color: var(--cor-escura);
+    color: #d9e8ef;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.rodape p {
+    margin: 0;
+}
