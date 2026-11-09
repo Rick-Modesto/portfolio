@@ -92,3 +92,58 @@ img {
     margin: 0 auto;
     padding: 0 var(--espaco-3);
 }
+
+/* ---------- Cabeçalho fixo e menu ---------- */
+.topo {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: var(--cor-escura);
+    box-shadow: var(--sombra);
+}
+
+.topo-conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--espaco-1) var(--espaco-3);
+    padding-top: var(--espaco-2);
+    padding-bottom: var(--espaco-2);
+}
+
+.marca {
+    font-family: var(--fonte-titulo);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.marca span {
+    color: var(--cor-realce);
+}
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--espaco-1);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu a {
+    display: block;
+    padding: var(--espaco-1) 0.75rem;
+    border-radius: 999px;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.menu a:hover {
+    background-color: var(--cor-realce);
+    color: var(--cor-escura);
+}
