@@ -355,10 +355,56 @@ img {
 a:focus-visible {
     outline: 3px solid var(--cor-escura);
     outline-offset: 3px;
-    border-radius: 4px;
 }
 
 .topo a:focus-visible,
 .apresentacao a:focus-visible {
     outline-color: var(--cor-realce);
+}
+
+/* ---------- Responsividade: telas pequenas ---------- */
+@media (max-width: 640px) {
+    .container {
+        padding: 0 var(--espaco-2);
+    }
+
+    .topo-conteudo {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: var(--espaco-1);
+        padding-bottom: var(--espaco-1);
+    }
+
+    .menu ul {
+        gap: 0.25rem;
+    }
+
+    .menu a {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.875rem;
+    }
+
+    .apresentacao,
+    .secao {
+        padding: var(--espaco-4) 0;
+    }
+
+    .secao {
+        scroll-margin-top: 8rem;
+    }
+
+    .selo {
+        margin: var(--espaco-1) 0 0;
+    }
+
+    .sobre-conteudo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--espaco-3);
+    }
+
+    .foto-perfil {
+        width: 160px;
+        height: 160px;
+    }
 }
