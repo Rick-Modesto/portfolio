@@ -350,3 +350,15 @@ img {
 .rodape p {
     margin: 0;
 }
+
+/* ---------- Acessibilidade: foco visível ---------- */
+a:focus-visible {
+    outline: 3px solid var(--cor-escura);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+.topo a:focus-visible,
+.apresentacao a:focus-visible {
+    outline-color: var(--cor-realce);
+}
