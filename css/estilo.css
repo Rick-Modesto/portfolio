@@ -147,3 +147,98 @@ img {
     background-color: var(--cor-realce);
     color: var(--cor-escura);
 }
+
+/* ---------- Apresentação ---------- */
+.apresentacao {
+    padding: var(--espaco-6) 0;
+    background-color: var(--cor-escura);
+    background-image: linear-gradient(135deg, var(--cor-escura) 0%, var(--cor-destaque-escura) 100%);
+    color: #ffffff;
+}
+
+.apresentacao h1 {
+    color: #ffffff;
+}
+
+.apresentacao-saudacao {
+    margin-bottom: var(--espaco-1);
+    color: var(--cor-realce);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.apresentacao-cargo {
+    font-size: 1.15rem;
+}
+
+.apresentacao-texto {
+    max-width: 40rem;
+    color: #d9e8ef;
+}
+
+.selo {
+    display: inline-block;
+    margin-left: var(--espaco-1);
+    padding: 0.1rem 0.75rem;
+    border: 1px solid var(--cor-realce);
+    border-radius: 999px;
+    color: var(--cor-realce);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: var(--espaco-2);
+    padding: 0.75rem var(--espaco-3);
+    border-radius: 999px;
+    background-color: var(--cor-realce);
+    color: var(--cor-escura);
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.botao:hover {
+    background-color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* ---------- Seções ---------- */
+.secao {
+    padding: var(--espaco-6) 0;
+    scroll-margin-top: 4.5rem;
+}
+
+.secao-alternada {
+    background-color: var(--cor-alternada);
+}
+
+.secao-titulo {
+    display: inline-block;
+    padding-bottom: var(--espaco-1);
+    margin-bottom: var(--espaco-4);
+    border-bottom: 4px solid var(--cor-realce);
+}
+
+/* ---------- Sobre mim ---------- */
+.sobre-conteudo {
+    display: flex;
+    align-items: center;
+    gap: var(--espaco-4);
+}
+
+.foto-perfil {
+    flex-shrink: 0;
+    width: 220px;
+    height: 220px;
+    border: 6px solid var(--cor-superficie);
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: var(--sombra);
+}
+
+.sobre-texto p:last-child {
+    margin-bottom: 0;
+}
