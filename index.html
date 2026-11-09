@@ -5,158 +5,183 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfólio - Carlos Henrique</title>
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Carlos Henrique</h1>
+    <header class="topo">
+        <div class="container topo-conteudo">
+            <a class="marca" href="#inicio">Carlos<span>.</span>dev</a>
 
-        <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
-
-        <p>4º período</p>
-
-        <p>
-            Portfólio pessoal desenvolvido para as avaliações C1 e C2.
-        </p>
-
-        <nav>
-            <h2>Menu</h2>
-
-            <ul>
-                <li><a href="#sobre">Sobre mim</a></li>
-                <li><a href="#formacao">Formação</a></li>
-                <li><a href="#conhecimentos">Conhecimentos</a></li>
-                <li><a href="#projetos">Projetos e experiências</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+            <nav class="menu" aria-label="Menu principal">
+                <ul>
+                    <li><a href="#sobre">Sobre mim</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#conhecimentos">Conhecimentos</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
 
-        <section id="sobre">
-            <h2>Sobre mim</h2>
+        <section id="inicio" class="apresentacao">
+            <div class="container">
+                <p class="apresentacao-saudacao">Olá, eu sou</p>
 
-            <img src="img/foto.jpg" alt="Foto de Carlos Henrique">
+                <h1>Carlos Henrique</h1>
 
-            <p>
-                Olá! Meu nome é Carlos Henrique e sou estudante do 4º período
-                de Análise e Desenvolvimento de Sistemas. Tenho interesse pela
-                área de tecnologia, principalmente em desenvolvimento,
-                automação de processos e análise de dados.
-            </p>
+                <p class="apresentacao-cargo">
+                    Estudante de Análise e Desenvolvimento de Sistemas
+                    <span class="selo">4º período</span>
+                </p>
 
-            <p>
-                Atualmente, busco ampliar meus conhecimentos técnicos e
-                transformar problemas do dia a dia em soluções utilizando
-                tecnologia. Tenho interesse em aprender continuamente e
-                desenvolver projetos que possam contribuir para minha carreira
-                profissional na área de tecnologia.
-            </p>
+                <p class="apresentacao-texto">
+                    Portfólio pessoal desenvolvido para as avaliações C1 e C2.
+                </p>
+
+                <a class="botao" href="#contato">Entre em contato</a>
+            </div>
         </section>
 
-        <section id="formacao">
-            <h2>Formação</h2>
+        <section id="sobre" class="secao">
+            <div class="container">
+                <h2 class="secao-titulo">Sobre mim</h2>
 
-            <h3>Análise e Desenvolvimento de Sistemas</h3>
+                <div class="sobre-conteudo">
+                    <img class="foto-perfil" src="img/foto.jpg" alt="Foto de Carlos Henrique">
 
-            <p>
-                Curso superior de Tecnologia em Análise e Desenvolvimento
-                de Sistemas — 4º período.
-            </p>
+                    <div class="sobre-texto">
+                        <p>
+                            Olá! Meu nome é Carlos Henrique e sou estudante do 4º período
+                            de Análise e Desenvolvimento de Sistemas. Tenho interesse pela
+                            área de tecnologia, principalmente em desenvolvimento,
+                            automação de processos e análise de dados.
+                        </p>
+
+                        <p>
+                            Atualmente, busco ampliar meus conhecimentos técnicos e
+                            transformar problemas do dia a dia em soluções utilizando
+                            tecnologia. Tenho interesse em aprender continuamente e
+                            desenvolver projetos que possam contribuir para minha carreira
+                            profissional na área de tecnologia.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="conhecimentos">
-            <h2>Conhecimentos</h2>
+        <section id="formacao" class="secao secao-alternada">
+            <div class="container">
+                <h2 class="secao-titulo">Formação</h2>
 
-            <ul>
-                <li>HTML</li>
-                <li>Java</li>
-                <li>Python</li>
-                <li>Excel</li>
-                <li>VBA</li>
-                <li>SQL</li>
-                <li>Git e GitHub</li>
-                <li>Selenium</li>
-                <li>Automação de processos</li>
-                <li>Análise de dados</li>
-            </ul>
+                <div class="card card-formacao">
+                    <h3>Análise e Desenvolvimento de Sistemas</h3>
+
+                    <p>
+                        Curso superior de Tecnologia em Análise e Desenvolvimento
+                        de Sistemas — 4º período.
+                    </p>
+                </div>
+            </div>
         </section>
 
-        <section id="projetos">
-            <h2>Projetos e experiências</h2>
+        <section id="conhecimentos" class="secao">
+            <div class="container">
+                <h2 class="secao-titulo">Conhecimentos</h2>
 
-            <article>
-                <h3>Automação de processos</h3>
+                <ul class="habilidades">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>Excel</li>
+                    <li>VBA</li>
+                    <li>SQL</li>
+                    <li>Git e GitHub</li>
+                    <li>Selenium</li>
+                    <li>Automação de processos</li>
+                    <li>Análise de dados</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projetos" class="secao secao-alternada">
+            <div class="container">
+                <h2 class="secao-titulo">Projetos e experiências</h2>
+
+                <div class="cards">
+                    <article class="card">
+                        <h3>Automação de processos</h3>
+
+                        <p>
+                            Desenvolvimento de automações utilizando Excel, VBA e
+                            Python para otimizar atividades, reduzir tarefas manuais
+                            e melhorar a eficiência dos processos.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Análise de dados e indicadores</h3>
+
+                        <p>
+                            Experiência com organização, tratamento e análise de dados,
+                            criação de indicadores e desenvolvimento de relatórios
+                            para acompanhamento de resultados.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Projetos acadêmicos</h3>
+
+                        <p>
+                            Desenvolvimento de atividades acadêmicas relacionadas à
+                            programação, banco de dados, desenvolvimento de sistemas
+                            e fundamentos da tecnologia da informação.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="secao">
+            <div class="container">
+                <h2 class="secao-titulo">Contato</h2>
 
                 <p>
-                    Desenvolvimento de automações utilizando Excel, VBA e
-                    Python para otimizar atividades, reduzir tarefas manuais
-                    e melhorar a eficiência dos processos.
+                    Você pode entrar em contato comigo através dos seguintes canais:
                 </p>
-            </article>
 
-            <article>
-                <h3>Análise de dados e indicadores</h3>
+                <ul class="contatos">
+                    <li>
+                        <strong>E-mail</strong>
+                        <a href="mailto:carloss.f@hotmail.com">carloss.f@hotmail.com</a>
+                    </li>
 
-                <p>
-                    Experiência com organização, tratamento e análise de dados,
-                    criação de indicadores e desenvolvimento de relatórios
-                    para acompanhamento de resultados.
-                </p>
-            </article>
+                    <li>
+                        <strong>GitHub</strong>
+                        <a href="https://github.com/Rick-Modesto" target="_blank" rel="noopener">github.com/Rick-Modesto</a>
+                    </li>
 
-            <article>
-                <h3>Projetos acadêmicos</h3>
-
-                <p>
-                    Desenvolvimento de atividades acadêmicas relacionadas à
-                    programação, banco de dados, desenvolvimento de sistemas
-                    e fundamentos da tecnologia da informação.
-                </p>
-            </article>
-        </section>
-
-        <section id="contato">
-            <h2>Contato</h2>
-
-            <p>
-                Você pode entrar em contato comigo através dos seguintes canais:
-            </p>
-
-            <ul>
-                <li>
-                    <strong>E-mail:</strong>
-                    <a href="mailto:carloss.f@hotmail.com">
-                        carloss.f@hotmail.com
-                    </a>
-                </li>
-
-                <li>
-                    <strong>GitHub:</strong>
-                    <a href="https://github.com/Rick-Modesto" target="_blank" rel="noopener">
-                        github.com/Rick-Modesto
-                    </a>
-                </li>
-
-                <li>
-                    <strong>LinkedIn:</strong>
-                    <a
-                        href="https://www.linkedin.com/in/henrique-fraga-07b51736"
-                        target="_blank" rel="noopener">
-                        Meu LinkedIn
-                    </a>
-                </li>
-            </ul>
+                    <li>
+                        <strong>LinkedIn</strong>
+                        <a href="https://www.linkedin.com/in/henrique-fraga-07b51736" target="_blank" rel="noopener">Meu LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
         </section>
 
     </main>
 
-    <footer>
-        <p>
-            &copy; 2026 Carlos Henrique - Portfólio pessoal.
-        </p>
+    <footer class="rodape">
+        <div class="container">
+            <p>
+                &copy; 2026 Carlos Henrique - Portfólio pessoal.
+            </p>
+        </div>
     </footer>
 
 </body>

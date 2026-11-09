@@ -1,0 +1,59 @@
+/* ==========================================================
+   Portfólio - Carlos Henrique
+   Folha de estilo principal (C2)
+   ========================================================== */
+
+/* ---------- Variáveis: paleta, fontes e espaçamentos ---------- */
+:root {
+    --cor-fundo: #f6f7f9;
+    --cor-superficie: #ffffff;
+    --cor-alternada: #eaf1f4;
+    --cor-texto: #1d2733;
+    --cor-texto-suave: #4a5868;
+    --cor-escura: #102a43;
+    --cor-destaque: #0b7285;
+    --cor-destaque-escura: #085a69;
+    --cor-realce: #ffb703;
+    --cor-borda: #d5dde5;
+
+    --espaco-1: 0.5rem;
+    --espaco-2: 1rem;
+    --espaco-3: 1.5rem;
+    --espaco-4: 2rem;
+    --espaco-6: 4rem;
+
+    --raio: 12px;
+    --sombra: 0 4px 16px rgba(16, 42, 67, 0.08);
+    --largura-maxima: 1100px;
+}
+
+/* ---------- Base e box model ---------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    max-width: var(--largura-maxima);
+    margin: 0 auto;
+    padding: 0 var(--espaco-3);
+}
