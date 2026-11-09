@@ -242,3 +242,61 @@ img {
 .sobre-texto p:last-child {
     margin-bottom: 0;
 }
+
+/* ---------- Cards (formação e projetos) ---------- */
+.card {
+    padding: var(--espaco-3);
+    border: 1px solid var(--cor-borda);
+    border-top: 4px solid var(--cor-destaque);
+    border-radius: var(--raio);
+    background-color: var(--cor-superficie);
+    box-shadow: var(--sombra);
+}
+
+.card p {
+    margin-bottom: 0;
+    color: var(--cor-texto-suave);
+}
+
+.card-formacao {
+    max-width: 42rem;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--espaco-3);
+}
+
+.cards > .card {
+    flex: 1 1 280px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cards > .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(16, 42, 67, 0.14);
+}
+
+/* ---------- Conhecimentos ---------- */
+.habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--espaco-1) 0.75rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.habilidades li {
+    padding: var(--espaco-1) var(--espaco-2);
+    border: 1px solid var(--cor-borda);
+    border-radius: 999px;
+    background-color: var(--cor-superficie);
+    font-weight: 600;
+    color: var(--cor-escura);
+}
+
+.habilidades li:nth-child(odd) {
+    border-color: var(--cor-destaque);
+}
